@@ -1,0 +1,11 @@
+{
+  "companyData" : {
+                 "name" : "S-MAX TECHNOLOGIES",
+                 "address" : {
+                              "city" : "Hyderabad",
+                              "pin" : 500072,
+                              "india" : true
+                             }
+  
+  }
+}
