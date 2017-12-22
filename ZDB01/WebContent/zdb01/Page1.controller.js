@@ -6,18 +6,23 @@ sap.ui.controller("zdb01.Page1", {
 * @memberOf zdb01.Page1
 */
 	onInit: function() {
-
+       
+		// instantiating the model
 		var oModel = new sap.ui.model.json.JSONModel();
-			oModel.loadData("model/data.json");
+			
+		//loading data into model
+		oModel.loadData("model/data.json");
 		
-		// getting reference of page1.view
+		// setting model to view
 		this.getView().setModel(oModel);
 		
-		//databinding
+		//refering to Input field
 		var oIp = this.getView().byId("idInput");
-		
+	
 		// property binding
 		oIp.bindProperty("value", "/companyData/address/city");
+		
+		
 		
 	},
 
